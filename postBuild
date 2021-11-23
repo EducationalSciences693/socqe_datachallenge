@@ -1,19 +1,11 @@
 #!/bin/bash
 
-# Reference: https://repo2docker.readthedocs.io/en/latest/config_files.html#postbuild-run-code-after-installing-the-environment
-# This script runs as a user -- see https://github.com/jupyter/repo2docker/issues/192
-
-# to avoid errors being silently ignored
+# See: https://github.com/yoomlam/ruby-in-jupyter/blob/master/postBuild
 set -ex
-
-# Install Ruby kernel for Jupyter notebook
-# Reference: https://github.com/SciRuby/iruby
-# apt packages are installed via apt.txt
-
-# Since not root, https://stackoverflow.com/questions/31596273/install-gem-in-local-folder
-# Addresses WARNING:  You don't have /home/jovyan/.gem/ruby/2.5.0/bin in your PATH, gem executables will not run.
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 gem install --user-install ffi-rzmq
 gem install --user-install iruby --pre
-
 iruby register --force
+
+git config --global user.name "Mariah A. Knowles"
+git config --global user.email "snotskie@gmail.com"

@@ -9,7 +9,7 @@ gem install --user-install pry-byebug
 gem install --user-install json
 gem install --user-install date
 gem install --user-install csv
-iruby register --force
+# iruby register --force
 
 git config --global user.name "Mariah A. Knowles"
 git config --global user.email "snotskie@gmail.com"

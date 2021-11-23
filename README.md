@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/EducationalSciences693/socqe_datachallenge/HEAD)
+
 # socqe_datachallenge
 Team 3 COVID 19 data challenge
 

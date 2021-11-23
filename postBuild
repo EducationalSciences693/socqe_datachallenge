@@ -5,6 +5,10 @@ set -ex
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 gem install --user-install ffi-rzmq
 gem install --user-install iruby --pre
+gem install --user-install pry-byebug
+gem install --user-install json
+gem install --user-install date
+gem install --user-install csv
 iruby register --force
 
 git config --global user.name "Mariah A. Knowles"

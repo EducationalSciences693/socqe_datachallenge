@@ -11,5 +11,5 @@ gem install --user-install date
 gem install --user-install csv
 # iruby register --force
 
-git config --global user.name "Mariah A. Knowles"
-git config --global user.email "snotskie@gmail.com"
+git config --global user.name "jovyan"
+git config --global user.email "jovyan@mybinder"

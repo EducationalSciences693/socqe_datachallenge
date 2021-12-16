@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Configure git defaults
+git config --global user.name "jovyan"
+git config --global user.email "jovyan@mybinder"
+
+# Configure ruby for jupyter
 # See: https://github.com/yoomlam/ruby-in-jupyter/blob/master/postBuild
 set -ex
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
@@ -10,6 +15,3 @@ gem install --user-install json
 gem install --user-install date
 gem install --user-install csv
 # iruby register --force
-
-git config --global user.name "jovyan"
-git config --global user.email "jovyan@mybinder"
